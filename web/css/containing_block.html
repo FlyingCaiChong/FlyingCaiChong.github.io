@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>包含块 Containing block | Blog</title>
+    <meta name="generator" content="VuePress 1.9.8">
+    
+    <meta name="description" content="Just a Blog">
+    
+    <link rel="preload" href="/assets/css/0.styles.0c683238.css" as="style"><link rel="preload" href="/assets/js/app.7c1f28a3.js" as="script"><link rel="preload" href="/assets/js/2.e37c797f.js" as="script"><link rel="preload" href="/assets/js/27.516b71fa.js" as="script"><link rel="prefetch" href="/assets/js/10.d4da1c4c.js"><link rel="prefetch" href="/assets/js/11.4f972f67.js"><link rel="prefetch" href="/assets/js/12.5d3423c7.js"><link rel="prefetch" href="/assets/js/13.4bb3b436.js"><link rel="prefetch" href="/assets/js/14.f88758b0.js"><link rel="prefetch" href="/assets/js/15.e525b850.js"><link rel="prefetch" href="/assets/js/16.7125c981.js"><link rel="prefetch" href="/assets/js/17.53f97ef0.js"><link rel="prefetch" href="/assets/js/18.9a5de0b6.js"><link rel="prefetch" href="/assets/js/19.cc08a25e.js"><link rel="prefetch" href="/assets/js/20.16c4b0ac.js"><link rel="prefetch" href="/assets/js/21.ee563fbb.js"><link rel="prefetch" href="/assets/js/22.881cb22b.js"><link rel="prefetch" href="/assets/js/23.bc58b962.js"><link rel="prefetch" href="/assets/js/24.4739288a.js"><link rel="prefetch" href="/assets/js/25.e46ad35f.js"><link rel="prefetch" href="/assets/js/26.c7f900e1.js"><link rel="prefetch" href="/assets/js/28.9a7b7ccc.js"><link rel="prefetch" href="/assets/js/29.45aa1410.js"><link rel="prefetch" href="/assets/js/3.872bb4a3.js"><link rel="prefetch" href="/assets/js/30.ca09380e.js"><link rel="prefetch" href="/assets/js/31.987990f2.js"><link rel="prefetch" href="/assets/js/32.39a290d8.js"><link rel="prefetch" href="/assets/js/33.facc320f.js"><link rel="prefetch" href="/assets/js/34.e593caaa.js"><link rel="prefetch" href="/assets/js/35.230c6320.js"><link rel="prefetch" href="/assets/js/36.ae706268.js"><link rel="prefetch" href="/assets/js/37.5b42feab.js"><link rel="prefetch" href="/assets/js/4.b869fa1a.js"><link rel="prefetch" href="/assets/js/5.01b45038.js"><link rel="prefetch" href="/assets/js/6.11ab0106.js"><link rel="prefetch" href="/assets/js/7.873df227.js"><link rel="prefetch" href="/assets/js/8.423629d4.js"><link rel="prefetch" href="/assets/js/9.d34e85cb.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0c683238.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="iOS" class="dropdown-title"><span class="title">iOS</span> <span class="arrow down"></span></button> <button type="button" aria-label="iOS" class="mobile-dropdown-title"><span class="title">iOS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/iOS/Objective-C/" class="nav-link">
+  Objective-C
+</a></li><li class="dropdown-item"><!----> <a href="/iOS/Swift/" class="nav-link">
+  Swift
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Web" class="dropdown-title"><span class="title">Web</span> <span class="arrow down"></span></button> <button type="button" aria-label="Web" class="mobile-dropdown-title"><span class="title">Web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/javascript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/web/typescript/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/web/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/web/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/web/css/" class="nav-link router-link-active">
+  CSS
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tech/project/" class="nav-link">
+  前端项目搭建规范
+</a></li><li class="dropdown-item"><!----> <a href="/tech/package/" class="nav-link">
+  前端包管理工具
+</a></li><li class="dropdown-item"><!----> <a href="/tech/navigator/" class="nav-link">
+  常用工具
+</a></li><li class="dropdown-item"><!----> <a href="/tech/regexp/" class="nav-link">
+  正则表达式
+</a></li></ul></div></div> <a href="https://github.com/FlyingCaiChong/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="iOS" class="dropdown-title"><span class="title">iOS</span> <span class="arrow down"></span></button> <button type="button" aria-label="iOS" class="mobile-dropdown-title"><span class="title">iOS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/iOS/Objective-C/" class="nav-link">
+  Objective-C
+</a></li><li class="dropdown-item"><!----> <a href="/iOS/Swift/" class="nav-link">
+  Swift
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Web" class="dropdown-title"><span class="title">Web</span> <span class="arrow down"></span></button> <button type="button" aria-label="Web" class="mobile-dropdown-title"><span class="title">Web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/javascript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/web/typescript/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/web/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/web/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/web/css/" class="nav-link router-link-active">
+  CSS
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tech/project/" class="nav-link">
+  前端项目搭建规范
+</a></li><li class="dropdown-item"><!----> <a href="/tech/package/" class="nav-link">
+  前端包管理工具
+</a></li><li class="dropdown-item"><!----> <a href="/tech/navigator/" class="nav-link">
+  常用工具
+</a></li><li class="dropdown-item"><!----> <a href="/tech/regexp/" class="nav-link">
+  正则表达式
+</a></li></ul></div></div> <a href="https://github.com/FlyingCaiChong/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>CSS</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/web/css/" aria-current="page" class="sidebar-link">CSS</a></li><li><a href="/web/css/base.html" class="sidebar-link">流、元素与基本尺寸</a></li><li><a href="/web/css/box.html" class="sidebar-link">盒尺寸</a></li><li><a href="/web/css/bfc.html" class="sidebar-link">BFC(block formatting context)</a></li><li><a href="/web/css/flex.html" class="sidebar-link">Flex 布局</a></li><li><a href="/web/css/containing_block.html" aria-current="page" class="active sidebar-link">包含块 Containing block</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/css/containing_block.html#包含块的判定" class="sidebar-link">包含块的判定</a></li><li class="sidebar-sub-header"><a href="/web/css/containing_block.html#包含块的范围" class="sidebar-link">包含块的范围</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="包含块-containing-block"><a href="#包含块-containing-block" class="header-anchor">#</a> 包含块 Containing block</h1> <p>包含块可以决定一个元素大小和定位的元素. 包含块也可以理解为一个矩形盒子,这个矩形盒子的作用是为这个矩形内部的后代元素(子元素、孙子元素等)提供一个参考.</p> <p>通常情况下, 一个元素的包含块是由离它最近的“块级祖先元素”的“内容边界”决定的. 但当元素被设置为绝对定位时, 此时该元素的包含块是由离它最近的&quot;<code>position:relative</code>&quot;或&quot;<code>position:absolute</code>&quot;的祖先元素决定. 一个元素生成的盒子会扮演该元素的内部元素包含块的角色.也就是说,一个元素的 <code>CSS</code> 盒子为它的内部元素建造了包含块.</p> <h2 id="包含块的判定"><a href="#包含块的判定" class="header-anchor">#</a> 包含块的判定</h2> <h3 id="_1-根元素"><a href="#_1-根元素" class="header-anchor">#</a> 1. 根元素</h3> <p>根元素（<code>HTML</code> 元素），是一个页面中最顶端的元素，它没有父元素。根元素存在的包含块，被称为“初始包含块（<code>initial containing block</code>）</p> <h3 id="_2-固定定位元素"><a href="#_2-固定定位元素" class="header-anchor">#</a> 2. 固定定位元素</h3> <p>如果元素的 <code>position</code> 属性为 <code>fixed</code>，那么它的包含块是当前可视窗口，也就是当前浏览器窗口。</p> <h3 id="_3-静态定位元素和相对定位元素"><a href="#_3-静态定位元素和相对定位元素" class="header-anchor">#</a> 3. 静态定位元素和相对定位元素</h3> <p>如果元素的 <code>position</code> 属性为 <code>static</code> 或 <code>relative</code>，那么它的包含块是它最近的块级祖先元素创建的。祖先元素必须是 <code>block</code>、<code>inline-block</code> 或者 <code>table-cell</code> 类型。</p> <h3 id="_4-绝对定位元素"><a href="#_4-绝对定位元素" class="header-anchor">#</a> 4. 绝对定位元素</h3> <p>如果元素的 <code>position</code> 属性为 <code>absolute</code>，那么它的包含块是由最近的 <code>position</code> 属性不为 <code>static</code> 的祖先元素。这里的祖先元素可以是块元素，也可以是行内元素。</p> <h2 id="包含块的范围"><a href="#包含块的范围" class="header-anchor">#</a> 包含块的范围</h2> <ol><li>如果祖先元素是块元素，则包含块的范围为祖先元素的 <code>padding edge</code> 形成。</li> <li>如果祖先是行内元素，则包含块取决于祖先元素的 <code>direction</code> 属性。</li></ol></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/FlyingCaiChong/blog/edit/master/docs/web/css/containing_block.md" target="_blank" rel="noopener noreferrer">改善此页面</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2023/2/12 上午8:42:33</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/web/css/flex.html" class="prev">
+        Flex 布局
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.7c1f28a3.js" defer></script><script src="/assets/js/2.e37c797f.js" defer></script><script src="/assets/js/27.516b71fa.js" defer></script>
+  </body>
+</html>

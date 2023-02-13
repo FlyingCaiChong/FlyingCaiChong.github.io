@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>BFC(block formatting context) | Blog</title>
+    <meta name="generator" content="VuePress 1.9.8">
+    
+    <meta name="description" content="Just a Blog">
+    
+    <link rel="preload" href="/assets/css/0.styles.0c683238.css" as="style"><link rel="preload" href="/assets/js/app.7c1f28a3.js" as="script"><link rel="preload" href="/assets/js/2.e37c797f.js" as="script"><link rel="preload" href="/assets/js/25.e46ad35f.js" as="script"><link rel="prefetch" href="/assets/js/10.d4da1c4c.js"><link rel="prefetch" href="/assets/js/11.4f972f67.js"><link rel="prefetch" href="/assets/js/12.5d3423c7.js"><link rel="prefetch" href="/assets/js/13.4bb3b436.js"><link rel="prefetch" href="/assets/js/14.f88758b0.js"><link rel="prefetch" href="/assets/js/15.e525b850.js"><link rel="prefetch" href="/assets/js/16.7125c981.js"><link rel="prefetch" href="/assets/js/17.53f97ef0.js"><link rel="prefetch" href="/assets/js/18.9a5de0b6.js"><link rel="prefetch" href="/assets/js/19.cc08a25e.js"><link rel="prefetch" href="/assets/js/20.16c4b0ac.js"><link rel="prefetch" href="/assets/js/21.ee563fbb.js"><link rel="prefetch" href="/assets/js/22.881cb22b.js"><link rel="prefetch" href="/assets/js/23.bc58b962.js"><link rel="prefetch" href="/assets/js/24.4739288a.js"><link rel="prefetch" href="/assets/js/26.c7f900e1.js"><link rel="prefetch" href="/assets/js/27.516b71fa.js"><link rel="prefetch" href="/assets/js/28.9a7b7ccc.js"><link rel="prefetch" href="/assets/js/29.45aa1410.js"><link rel="prefetch" href="/assets/js/3.872bb4a3.js"><link rel="prefetch" href="/assets/js/30.ca09380e.js"><link rel="prefetch" href="/assets/js/31.987990f2.js"><link rel="prefetch" href="/assets/js/32.39a290d8.js"><link rel="prefetch" href="/assets/js/33.facc320f.js"><link rel="prefetch" href="/assets/js/34.e593caaa.js"><link rel="prefetch" href="/assets/js/35.230c6320.js"><link rel="prefetch" href="/assets/js/36.ae706268.js"><link rel="prefetch" href="/assets/js/37.5b42feab.js"><link rel="prefetch" href="/assets/js/4.b869fa1a.js"><link rel="prefetch" href="/assets/js/5.01b45038.js"><link rel="prefetch" href="/assets/js/6.11ab0106.js"><link rel="prefetch" href="/assets/js/7.873df227.js"><link rel="prefetch" href="/assets/js/8.423629d4.js"><link rel="prefetch" href="/assets/js/9.d34e85cb.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0c683238.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="iOS" class="dropdown-title"><span class="title">iOS</span> <span class="arrow down"></span></button> <button type="button" aria-label="iOS" class="mobile-dropdown-title"><span class="title">iOS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/iOS/Objective-C/" class="nav-link">
+  Objective-C
+</a></li><li class="dropdown-item"><!----> <a href="/iOS/Swift/" class="nav-link">
+  Swift
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Web" class="dropdown-title"><span class="title">Web</span> <span class="arrow down"></span></button> <button type="button" aria-label="Web" class="mobile-dropdown-title"><span class="title">Web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/javascript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/web/typescript/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/web/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/web/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/web/css/" class="nav-link router-link-active">
+  CSS
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tech/project/" class="nav-link">
+  前端项目搭建规范
+</a></li><li class="dropdown-item"><!----> <a href="/tech/package/" class="nav-link">
+  前端包管理工具
+</a></li><li class="dropdown-item"><!----> <a href="/tech/navigator/" class="nav-link">
+  常用工具
+</a></li><li class="dropdown-item"><!----> <a href="/tech/regexp/" class="nav-link">
+  正则表达式
+</a></li></ul></div></div> <a href="https://github.com/FlyingCaiChong/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="iOS" class="dropdown-title"><span class="title">iOS</span> <span class="arrow down"></span></button> <button type="button" aria-label="iOS" class="mobile-dropdown-title"><span class="title">iOS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/iOS/Objective-C/" class="nav-link">
+  Objective-C
+</a></li><li class="dropdown-item"><!----> <a href="/iOS/Swift/" class="nav-link">
+  Swift
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Web" class="dropdown-title"><span class="title">Web</span> <span class="arrow down"></span></button> <button type="button" aria-label="Web" class="mobile-dropdown-title"><span class="title">Web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/javascript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/web/typescript/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/web/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/web/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/web/css/" class="nav-link router-link-active">
+  CSS
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tech/project/" class="nav-link">
+  前端项目搭建规范
+</a></li><li class="dropdown-item"><!----> <a href="/tech/package/" class="nav-link">
+  前端包管理工具
+</a></li><li class="dropdown-item"><!----> <a href="/tech/navigator/" class="nav-link">
+  常用工具
+</a></li><li class="dropdown-item"><!----> <a href="/tech/regexp/" class="nav-link">
+  正则表达式
+</a></li></ul></div></div> <a href="https://github.com/FlyingCaiChong/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>CSS</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/web/css/" aria-current="page" class="sidebar-link">CSS</a></li><li><a href="/web/css/base.html" class="sidebar-link">流、元素与基本尺寸</a></li><li><a href="/web/css/box.html" class="sidebar-link">盒尺寸</a></li><li><a href="/web/css/bfc.html" aria-current="page" class="active sidebar-link">BFC(block formatting context)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/css/bfc.html#bfc-的用途" class="sidebar-link">BFC 的用途</a></li></ul></li><li><a href="/web/css/flex.html" class="sidebar-link">Flex 布局</a></li><li><a href="/web/css/containing_block.html" class="sidebar-link">包含块 Containing block</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="bfc-block-formatting-context"><a href="#bfc-block-formatting-context" class="header-anchor">#</a> BFC(block formatting context)</h1> <p><code>BFC</code> 全称 <code>block formatting context</code>, 中文为&quot;块级格式化上下文&quot;.</p> <p>表现规则: 如果一个元素具有 <code>BFC</code>, 内部子元素的属性不会影响外部元素. 所以, <code>BFC</code> 元素是不可能发生 <code>margin</code> 重叠的, 也可以用来清除浮动的影响, 因为如果不清除, 子元素浮动则父元素高度塌陷.</p> <p>常见触发 <code>BFC</code> 的情况如:</p> <ul><li><code>&lt;html&gt;</code>根元素</li> <li><code>float</code> 的值不为 <code>none</code></li> <li><code>overflow</code> 的值为 <code>auto</code>、<code>scroll</code> 或者 <code>hidden</code></li> <li><code>display</code> 的值为 <code>flow-root</code>、<code>table-cell</code>、<code>table-caption</code> 和 <code>inline-block</code> 中的任何一个</li> <li><code>position</code> 的值不为 <code>relative</code> 和 <code>static</code></li></ul> <p>格式化上下文影响布局, 通常, 会为定位和清除浮动创建新的 <code>BFC</code>, 而不是更改布局, 因为它将:</p> <ul><li>包含内部浮动</li> <li>排除外部浮动</li> <li>阻止外边距重叠</li></ul> <p>使用<code>display: flow-root</code>, 一个新的<code>display</code>属性的值, 可以创建无副作用的 <code>BFC</code>.</p> <h2 id="bfc-的用途"><a href="#bfc-的用途" class="header-anchor">#</a> BFC 的用途</h2> <p>常见用途有三个:</p> <ol><li>避免垂直外边距叠加</li> <li>清除浮动</li> <li>实现自适应布局</li></ol></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/FlyingCaiChong/blog/edit/master/docs/web/css/bfc.md" target="_blank" rel="noopener noreferrer">改善此页面</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2023/2/10 上午8:20:25</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/web/css/box.html" class="prev">
+        盒尺寸
+      </a></span> <span class="next"><a href="/web/css/flex.html">
+        Flex 布局
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.7c1f28a3.js" defer></script><script src="/assets/js/2.e37c797f.js" defer></script><script src="/assets/js/25.e46ad35f.js" defer></script>
+  </body>
+</html>
